@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</title>
+  <title>Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste</title>
   <link>https://us-pantry-expiration-tracker.enjoy-onepage.com/</link>
-  <description>Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.</description>
+  <description>Track food expiration dates, see what to use first, and learn what best-by, use-by and sell-by really mean. Includes USDA storage times. Free, private.</description>
   <language>en-us</language>
   <atom:link href="https://us-pantry-expiration-tracker.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Tue, 29 Sep 2026 06:02:32 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 19:25:07 +0000</lastBuildDate>
   <item>
-    <title>Disclaimer | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</title>
+    <title>Disclaimer | Pantry &amp; Fridge Expiration Tracker</title>
     <link>https://us-pantry-expiration-tracker.enjoy-onepage.com/disclaimer.html</link>
     <guid isPermaLink="true">https://us-pantry-expiration-tracker.enjoy-onepage.com/disclaimer.html</guid>
-    <description>Disclaimer | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</description>
-    <pubDate>Sun, 20 Sep 2026 22:11:29 +0900</pubDate>
+    <description>Disclaimer for the Pantry &amp; Fridge Expiration Tracker.</description>
+    <pubDate>Tue, 29 Sep 2026 19:25:07 +0000</pubDate>
   </item>
   <item>
-    <title>Terms of Service | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</title>
-    <link>https://us-pantry-expiration-tracker.enjoy-onepage.com/terms.html</link>
-    <guid isPermaLink="true">https://us-pantry-expiration-tracker.enjoy-onepage.com/terms.html</guid>
-    <description>Terms of Service | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</description>
-    <pubDate>Sun, 20 Sep 2026 22:11:29 +0900</pubDate>
-  </item>
-  <item>
-    <title>Privacy Policy | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</title>
+    <title>Privacy Policy | Pantry &amp; Fridge Expiration Tracker</title>
     <link>https://us-pantry-expiration-tracker.enjoy-onepage.com/privacy.html</link>
     <guid isPermaLink="true">https://us-pantry-expiration-tracker.enjoy-onepage.com/privacy.html</guid>
-    <description>Privacy Policy | Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste Calculator</description>
-    <pubDate>Sun, 20 Sep 2026 22:11:29 +0900</pubDate>
+    <description>Privacy Policy for the Pantry &amp; Fridge Expiration Tracker.</description>
+    <pubDate>Tue, 29 Sep 2026 19:25:07 +0000</pubDate>
+  </item>
+  <item>
+    <title>Terms of Service | Pantry &amp; Fridge Expiration Tracker</title>
+    <link>https://us-pantry-expiration-tracker.enjoy-onepage.com/terms.html</link>
+    <guid isPermaLink="true">https://us-pantry-expiration-tracker.enjoy-onepage.com/terms.html</guid>
+    <description>Terms of Service for the Pantry &amp; Fridge Expiration Tracker.</description>
+    <pubDate>Tue, 29 Sep 2026 19:25:07 +0000</pubDate>
   </item>
 </channel>
 </rss>

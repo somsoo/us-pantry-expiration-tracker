@@ -1,308 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste</title>
-    <meta name="description" content="Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.">
-    <link rel="canonical" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste">
-    <meta property="og:description" content="Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.">
-    <meta property="og:url" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Pantry & Grocery Expiration Tracker">
-    <meta property="og:image" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste">
-    <meta name="twitter:description" content="Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.">
-    <meta name="twitter:image" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste</title>
+<meta name="description" content="Track food expiration dates, see what to use first, and learn what best-by, use-by and sell-by really mean. Includes USDA storage times. Free, private.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/">
+<meta name="theme-color" content="#b45309">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pantry &amp; Fridge Expiration Tracker">
+<meta property="og:title" content="Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste">
+<meta property="og:description" content="Track food expiration dates, see what to use first, and learn what best-by, use-by and sell-by really mean. Includes USDA storage times. Free, private.">
+<meta property="og:url" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste">
+<meta name="twitter:description" content="Track food expiration dates, see what to use first, and learn what best-by, use-by and sell-by really mean. Includes USDA storage times. Free, private.">
+<meta name="twitter:image" content="https://us-pantry-expiration-tracker.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Pantry &amp; Fridge Expiration Tracker RSS" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Pantry & Grocery Expiration Tracker",
+      "@id": "https://us-pantry-expiration-tracker.enjoy-onepage.com/#webapp",
+      "name": "Pantry & Fridge Expiration Tracker",
       "url": "https://us-pantry-expiration-tracker.enjoy-onepage.com/",
-      "description": "Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.",
       "applicationCategory": "LifestyleApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "inLanguage": "en",
+      "description": "A free food expiration tracker. Add what is in your fridge, freezer and pantry, see what to use first with day-by-day countdowns, apply USDA and FoodSafety.gov storage times, and keep a private tally of food used and tossed.",
+      "image": "https://us-pantry-expiration-tracker.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-pantry-expiration-tracker.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is food still safe after the best-by date?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Usually, if it was stored properly. USDA says that, except for infant formula, date labels are not safety dates; they show when food is at its best quality. After the date passes, refrigerated food should still be safe if it was handled properly and kept at 40°F or below for the recommended storage time. If you have any doubt about a food, throw it out." } },
+        { "@type": "Question", "name": "What is the difference between sell-by and use-by?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A sell-by date tells the store how long to display the product for sale. If a product has a use-by date, USDA advises following that date. If it has only a sell-by date or no date at all, cook or freeze fresh meat and poultry within the recommended storage times." } },
+        { "@type": "Question", "name": "How long do leftovers last in the fridge?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Three to four days, according to FoodSafety.gov. If you will not eat them in time, freeze them; frozen leftovers keep their best quality for 2 to 6 months. Refrigerate cooked food within two hours, or within one hour if it is above 90°F." } },
+        { "@type": "Question", "name": "Why does infant formula have a date?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Unlike other foods, infant formula must be dated under FDA rules. USDA advises not to feed a baby formula after its use-by date, because it may no longer have enough nutrients." } },
+        { "@type": "Question", "name": "Where is my food list saved?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Only in this browser. Your items, prices and used or tossed history stay on this device and are never sent to us. Remove items or press Clear history to delete them." } }
+      ]
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Pantry &amp; Fridge Expiration Tracker | Reduce Food Waste" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-pantry-expiration-tracker.enjoy-onepage.com/sitemap.xml">
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#fbf8f3;--card:#fff;--ink:#2d1f10;--muted:#6f5f4e;--accent:#b45309;--line:#eee3d3;--g:#15803d;--y:#b45309;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#92400e,#d97706);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.card h3{font-size:1rem;margin:16px 0 6px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+input[type=text],input[type=number],input[type=date],select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.sm{padding:5px 9px;font-size:.85rem;border-radius:8px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.err{color:var(--r);font-weight:600;margin:10px 0 0}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 10px}
+.count{border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+.count b{display:block;font-size:1.4rem}
+.count span{font-size:.8rem;color:var(--muted)}
+.count.r b{color:var(--r)}.count.y b{color:var(--y)}.count.g b{color:var(--g)}
+.items{list-style:none;margin:0;padding:0}
+.items li{border-top:1px solid var(--line);padding:9px 0;display:flex;gap:8px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.items .nm{font-weight:700;word-break:break-word}
+.items .meta{display:block;font-size:.85rem;color:var(--muted)}
+.items .adv{display:block;font-size:.85rem;color:#5b3a18;margin-top:2px}
+.badge{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:2px 9px;margin-left:6px;white-space:nowrap}
+.badge.r{background:#fee2e2;color:var(--r)}.badge.y{background:#fef3c7;color:#92400e}.badge.g{background:#dcfce7;color:var(--g)}
+.btns{display:flex;gap:6px;flex-shrink:0}
+.tally{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tally th,.tally td{text-align:left;padding:7px 8px;border-top:1px solid var(--line)}
+.tbl-wrap{overflow-x:auto}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#4a3826}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.src{font-size:.85rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2d1f10;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
+<header class="header">
+  <h1>Pantry &amp; Fridge Expiration Tracker</h1>
+  <div class="header-sub">Know what to use first · what food dates really mean · free, private, no sign-up</div>
+</header>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Pantry & Grocery Expiration Tracker</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Pantry & Grocery Expiration Tracker</h1>
-            <p class="text-sm sm:text-base text-slate-600">Track expiration dates of groceries, dairy, and leftovers with visual countdown badges and food waste savings estimator.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="add" aria-labelledby="in-h">
+      <h2 id="in-h">1. Add food</h2>
+      <label class="lbl" for="name">Food</label>
+      <input id="name" type="text" maxlength="60" autocomplete="off" placeholder="e.g. Milk, leftover chili">
+      <div class="row2">
+        <div><label class="lbl" for="where">Kept in</label>
+          <select id="where"><option value="fridge" selected>Fridge</option><option value="freezer">Freezer</option><option value="pantry">Pantry</option></select></div>
+        <div><label class="lbl" for="label">Date on the label</label>
+          <select id="label"><option value="best" selected>Best if used by</option><option value="use">Use by</option><option value="sell">Sell by</option><option value="mine">My own reminder</option></select></div>
       </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
+      <div class="row2">
+        <div><label class="lbl" for="date">Date</label><input id="date" type="date"></div>
+        <div><label class="lbl" for="price">Price ($) <span class="hint">optional</span></label><input id="price" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 3.49"></div>
+      </div>
+      <label class="lbl" for="preset">No date? Use a storage time</label>
+      <select id="preset"><option value="">Choose a food type…</option></select>
+      <p class="hint" id="preset-note">Sets a reminder at the short end of the official range, counted from today.</p>
+      <div class="actions"><button type="button" class="btn primary" id="btn-add">➕ Add to my list</button></div>
+      <p class="err" id="err" role="alert" hidden></p>
+    </section>
+
+    <section class="card result" aria-labelledby="out-h">
+      <h2 id="out-h">2. Use first</h2>
+      <div class="counts">
+        <div class="count r"><b id="c-exp">0</b><span>expired</span></div>
+        <div class="count y"><b id="c-soon">0</b><span>today to 3 days</span></div>
+        <div class="count g"><b id="c-later">0</b><span>later</span></div>
+      </div>
+      <p class="hint" id="empty">Your list is empty. Add food on the left to see what to use first.</p>
+      <ul class="items" id="items" aria-live="polite"></ul>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-copy" disabled>📋 Copy use-first list</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 Share</button>
+      </div>
+    </section>
+  </div>
+
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+  <section class="card" id="waste" aria-labelledby="t-h">
+    <h2 id="t-h">3. Used vs. tossed</h2>
+    <p class="hint">Press ✓ Used or 🗑 Tossed when an item leaves your kitchen. Values come from the prices you enter.</p>
+    <div class="tbl-wrap">
+      <table class="tally">
+        <thead><tr><th scope="col"></th><th scope="col">This month</th><th scope="col">All time</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Used</th><td id="t-used-m">0</td><td id="t-used-a">0</td></tr>
+          <tr><th scope="row">Tossed</th><td id="t-toss-m">0</td><td id="t-toss-a">0</td></tr>
+          <tr><th scope="row">Used before it went bad</th><td id="t-rate-m">–</td><td id="t-rate-a">–</td></tr>
+        </tbody>
+      </table>
     </div>
+    <div class="actions"><button type="button" class="btn" id="btn-clear" disabled>🗑️ Clear history</button></div>
+  </section>
 
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
+  <section class="card" id="dates" aria-labelledby="d-h">
+    <h2 id="d-h">📅 What the dates mean</h2>
+    <ul>
+      <li><strong>Best if used by:</strong> a quality date, not a safety date. USDA says that except for infant formula, date labels are not safety dates and are not required by federal law.</li>
+      <li><strong>Sell by:</strong> tells the store how long to display the product for sale. Buy before it, then go by storage times at home.</li>
+      <li><strong>Use by:</strong> if a product has a use-by date, USDA advises following that date. Never use infant formula after its use-by date.</li>
+      <li><strong>After the date:</strong> refrigerated food should still be safe if it was handled properly and kept at 40°F or below for the recommended storage time. If you have any doubt, throw it out.</li>
+    </ul>
+    <h3>Storage times used by the quick-add list</h3>
+    <div class="tbl-wrap">
+      <table class="tally" id="preset-table">
+        <thead><tr><th scope="col">Food</th><th scope="col">Where</th><th scope="col">Official time</th><th scope="col">Reminder</th></tr></thead>
+        <tbody id="preset-body"></tbody>
+      </table>
     </div>
+    <p class="src">Sources: USDA Food Safety and Inspection Service, Food Product Dating; USDA, food date labeling and canned food guidance; FoodSafety.gov, Cold Food Storage Chart and leftovers guidance; FDA refrigerator storage chart (40°F). Freezer times are for quality only: food kept at 0°F stays safe. Checked September 30, 2026.</p>
+  </section>
 
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Pantry & Grocery Expiration Tracker. All rights reserved.</p>
-        </div>
-    </footer>
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>Is food still safe after the best-by date?</h3><p>Usually, if it was stored properly. USDA says that, except for infant formula, date labels are not safety dates; they show when food is at its best quality. After the date passes, refrigerated food should still be safe if it was handled properly and kept at 40°F or below for the recommended storage time. If you have any doubt about a food, throw it out.</p></div>
+    <div class="faq-item"><h3>What is the difference between sell-by and use-by?</h3><p>A sell-by date tells the store how long to display the product for sale. If a product has a use-by date, USDA advises following that date. If it has only a sell-by date or no date at all, cook or freeze fresh meat and poultry within the recommended storage times.</p></div>
+    <div class="faq-item"><h3>How long do leftovers last in the fridge?</h3><p>Three to four days, according to FoodSafety.gov. If you will not eat them in time, freeze them; frozen leftovers keep their best quality for 2 to 6 months. Refrigerate cooked food within two hours, or within one hour if it is above 90°F.</p></div>
+    <div class="faq-item"><h3>Why does infant formula have a date?</h3><p>Unlike other foods, infant formula must be dated under FDA rules. USDA advises not to feed a baby formula after its use-by date, because it may no longer have enough nutrients.</p></div>
+    <div class="faq-item"><h3>Where is my food list saved?</h3><p>Only in this browser. Your items, prices and used or tossed history stay on this device and are never sent to us. Remove items or press Clear history to delete them.</p></div>
+  </section>
 
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>Countdowns only show the dates you enter. They cannot tell whether a food is safe: that depends on how it was handled and stored. Follow use-by dates, keep your fridge at 40°F or below, and when in doubt, throw it out.</p>
+  </section>
+</main>
 
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Pantry & Grocery Expiration Tracker - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-pantry-expiration-tracker.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
 
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
+<footer class="footer">
+  <p>A free food expiration tracker. Your list stays in this browser and is never sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
 
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
 
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-pantry-expiration-tracker.enjoy-onepage.com';
+  var TOOL_NAME = 'Pantry & Fridge Expiration Tracker';
+  var ITEMS = 'pantry.items.v1', HIST = 'pantry.history.v1', MAX_ITEMS = 300;
+  var WHERE = { fridge: 'Fridge', freezer: 'Freezer', pantry: 'Pantry' };
+  var LABEL = { best: 'Best by', use: 'Use by', sell: 'Sell by', mine: 'Reminder' };
+  /* Official storage times (FoodSafety.gov, USDA); the reminder uses the short end of each range */
+  var PRESETS = [
+    { id: 'leftovers', name: 'Leftovers (cooked)', where: 'fridge', range: '3 to 4 days', days: 3 },
+    { id: 'salad', name: 'Egg, chicken, ham, tuna or macaroni salad', where: 'fridge', range: '3 to 4 days', days: 3 },
+    { id: 'deli-open', name: 'Lunch meat, opened or deli sliced', where: 'fridge', range: '3 to 5 days', days: 3 },
+    { id: 'deli', name: 'Lunch meat, unopened', where: 'fridge', range: '2 weeks', days: 14 },
+    { id: 'hotdog-open', name: 'Hot dogs, opened', where: 'fridge', range: '1 week', days: 7 },
+    { id: 'hotdog', name: 'Hot dogs, unopened', where: 'fridge', range: '2 weeks', days: 14 },
+    { id: 'bacon', name: 'Bacon', where: 'fridge', range: '1 week', days: 7 },
+    { id: 'ground', name: 'Raw ground beef, turkey, veal, pork or lamb', where: 'fridge', range: '1 to 2 days', days: 1 },
+    { id: 'frozen', name: 'Leftovers, frozen (best quality)', where: 'freezer', range: '2 to 6 months', months: 2 },
+    { id: 'can-low', name: 'Canned low-acid food (meat, fish, soup, most vegetables)', where: 'pantry', range: '2 to 5 years', months: 24 },
+    { id: 'can-high', name: 'Canned high-acid food (juice, fruit, pickles, tomatoes)', where: 'pantry', range: '12 to 18 months', months: 12 }
+  ];
+  var ADV = {
+    best: 'Past its best-by date, which is about quality, not safety. Food that was handled and stored properly is usually still safe. When in doubt, throw it out.',
+    use: 'Past its use-by date. USDA advises following use-by dates.',
+    sell: 'Past its sell-by date: that date is for the store. Go by storage times; cook or freeze fresh meat and poultry within them.',
+    mine: 'Past your reminder date. Check it, and when in doubt, throw it out.'
+  };
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function val(id) { var el = $(id); return el ? String(el.value).trim() : ''; }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+  function setErr(m) { var e = $('err'); if (e) { e.textContent = m || ''; e.hidden = !m; } }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  /* ---------- calendar dates are handled as local Y-M-D only (never new Date('YYYY-MM-DD'), which is UTC) ---------- */
+  function dayKey(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function parseKey(k) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(k || '');
+    if (!m) return null;
+    var y = +m[1], mo = +m[2], d = +m[3], dt = new Date(y, mo - 1, d);
+    return (dt.getFullYear() === y && dt.getMonth() === mo - 1 && dt.getDate() === d) ? { y: y, m: mo, d: d } : null;
+  }
+  function today() { return dayKey(new Date()); }
+  function daysUntil(k, from) {
+    var a = parseKey(from), b = parseKey(k);
+    return Math.round((Date.UTC(b.y, b.m - 1, b.d) - Date.UTC(a.y, a.m - 1, a.d)) / 86400000);
+  }
+  function addDays(k, n) { var p = parseKey(k); return dayKey(new Date(p.y, p.m - 1, p.d + n)); }
+  function addMonths(k, n) {
+    var p = parseKey(k), last = new Date(p.y, p.m - 1 + n + 1, 0).getDate();
+    return dayKey(new Date(p.y, p.m - 1 + n, Math.min(p.d, last)));
+  }
+  function niceDate(k) {
+    var p = parseKey(k), s = new Date(p.y, p.m - 1, p.d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return p.y === new Date().getFullYear() ? s : s + ', ' + p.y;
+  }
+  function countdown(d) {
+    if (d < 0) return { cls: 'r', text: d === -1 ? 'Expired yesterday' : 'Expired ' + (-d) + ' days ago' };
+    if (d === 0) return { cls: 'y', text: 'Today' };
+    if (d === 1) return { cls: 'y', text: 'Tomorrow' };
+    return { cls: d <= 3 ? 'y' : 'g', text: 'In ' + d + ' days' };
+  }
+  function money(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+
+  /* ---------- storage ---------- */
+  function readJSON(k, dflt) { try { var v = JSON.parse(localStorage.getItem(k)); return v === null ? dflt : v; } catch (e) { return dflt; } }
+  function writeJSON(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+  function okPrice(p) { return p === null || (typeof p === 'number' && isFinite(p) && p >= 0 && p <= 10000); }
+  function validItem(x) {
+    return x && typeof x.id === 'string' && typeof x.name === 'string' && x.name.length > 0 && x.name.length <= 60 &&
+           WHERE[x.where] && LABEL[x.label] && parseKey(x.date) && okPrice(x.price);
+  }
+  function validHist(x) { return x && (x.o === 'used' || x.o === 'tossed') && parseKey(x.on) && okPrice(x.price); }
+  function loadItems() { var a = readJSON(ITEMS, []); return Array.isArray(a) ? a.filter(validItem) : []; }
+  function loadHist() { var a = readJSON(HIST, []); return Array.isArray(a) ? a.filter(validHist) : []; }
+  function sorted(items) {
+    return items.slice().sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : a.name.localeCompare(b.name)); });
+  }
+
+  /* ---------- render list, counts and tally ---------- */
+  function renderList() {
+    var items = sorted(loadItems()), t = today(), ul = $('items'), c = { r: 0, y: 0, g: 0 };
+    if (ul) ul.innerHTML = '';
+    items.forEach(function (x) {
+      var d = daysUntil(x.date, t), cd = countdown(d);
+      c[cd.cls] += 1;
+      if (!ul) return;
+      var li = document.createElement('li'); li.setAttribute('data-id', x.id); li.setAttribute('data-days', String(d));
+      var info = document.createElement('div');
+      var nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = x.name; info.appendChild(nm);
+      var bd = document.createElement('span'); bd.className = 'badge ' + cd.cls; bd.textContent = cd.text; info.appendChild(bd);
+      var meta = document.createElement('span'); meta.className = 'meta';
+      meta.textContent = WHERE[x.where] + ' · ' + LABEL[x.label] + ' ' + niceDate(x.date) + (x.price !== null ? ' · ' + money(x.price) : '');
+      info.appendChild(meta);
+      if (d < 0) { var adv = document.createElement('span'); adv.className = 'adv'; adv.textContent = ADV[x.label]; info.appendChild(adv); }
+      var btns = document.createElement('div'); btns.className = 'btns';
+      [['used', '✓ Used'], ['tossed', '🗑 Tossed'], ['remove', '✕']].forEach(function (b) {
+        var bt = document.createElement('button'); bt.type = 'button'; bt.className = 'btn sm'; bt.textContent = b[1];
+        bt.setAttribute('data-act', b[0]); bt.setAttribute('aria-label', (b[0] === 'remove' ? 'Remove ' : 'Mark as ' + b[0] + ': ') + x.name);
+        btns.appendChild(bt);
+      });
+      li.appendChild(info); li.appendChild(btns); ul.appendChild(li);
+    });
+    setText('c-exp', String(c.r)); setText('c-soon', String(c.y)); setText('c-later', String(c.g));
+    var em = $('empty'); if (em) em.hidden = items.length > 0;
+    ['btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = !items.length; });
+  }
+  function renderTally() {
+    var h = loadHist(), month = today().slice(0, 7), s = { m: { used: 0, tossed: 0, uv: 0, tv: 0 }, a: { used: 0, tossed: 0, uv: 0, tv: 0 } };
+    h.forEach(function (x) {
+      [x.on.slice(0, 7) === month ? 'm' : null, 'a'].forEach(function (k) {
+        if (!k) return;
+        s[k][x.o] += 1;
+        if (x.price !== null) s[k][x.o === 'used' ? 'uv' : 'tv'] += x.price;
+      });
+    });
+    ['m', 'a'].forEach(function (k) {
+      var r = s[k], n = r.used + r.tossed;
+      setText('t-used-' + k, r.used + (r.uv ? ' (' + money(r.uv) + ')' : ''));
+      setText('t-toss-' + k, r.tossed + (r.tv ? ' (' + money(r.tv) + ')' : ''));
+      setText('t-rate-' + k, n ? Math.round(100 * r.used / n) + '%' : '–');
+    });
+    var clr = $('btn-clear'); if (clr) clr.disabled = !h.length;
+  }
+  function renderAll() { renderList(); renderTally(); }
+
+  /* ---------- add / act ---------- */
+  function readForm() {
+    var p = val('price');
+    return { name: val('name'), where: WHERE[val('where')] ? val('where') : 'fridge', label: LABEL[val('label')] ? val('label') : 'best',
+             date: val('date'), price: p === '' ? null : Number(p) };
+  }
+  function validate(f) {
+    if (!f.name) return 'Enter the name of the food.';
+    if (f.name.length > 60) return 'Keep the name to 60 characters or fewer.';
+    if (!f.date) return 'Pick a date, or choose a storage time below it.';
+    var p = parseKey(f.date);
+    if (!p || p.y < 2000 || p.y > 2100) return 'Pick a real date between 2000 and 2100.';
+    if (f.price !== null && !okPrice(f.price)) return 'Price should be between $0 and $10,000.';
+    if (loadItems().length >= MAX_ITEMS) return 'Your list is full (300 items). Remove some items first.';
+    return '';
+  }
+  function add() {
+    var f = readForm(), msg = validate(f);
+    setErr(msg);
+    if (msg) return;
+    var items = loadItems();
+    items.push({ id: String(Date.now()) + Math.floor(Math.random() * 1000), name: f.name, where: f.where, label: f.label, date: f.date,
+                 price: f.price === null ? null : Math.round(f.price * 100) / 100 });
+    if (!writeJSON(ITEMS, items)) { setErr('Could not save. Your browser may be blocking storage.'); return; }
+    var d = daysUntil(f.date, today());
+    showToastNotification('Added ' + f.name + ' (' + countdown(d).text.toLowerCase() + ').');
+    ['name', 'price'].forEach(function (id) { var el = $(id); if (el) el.value = ''; });
+    var pr = $('preset'); if (pr) pr.value = '';
+    renderAll();
+  }
+  function act(id, what) {
+    var items = loadItems(), x = null;
+    items.forEach(function (i) { if (i.id === id) x = i; });
+    if (!x) return;
+    writeJSON(ITEMS, items.filter(function (i) { return i.id !== id; }));
+    if (what !== 'remove') {
+      var h = loadHist();
+      h.push({ name: x.name, where: x.where, price: x.price, o: what, on: today() });
+      writeJSON(HIST, h.slice(-2000));
+      showToastNotification(what === 'used' ? 'Nice! ' + x.name + ' was used in time.' : x.name + ' marked as tossed.');
+    } else {
+      showToastNotification(x.name + ' removed.');
+    }
+    renderAll();
+  }
+  function applyPreset() {
+    var id = val('preset'), p = null;
+    PRESETS.forEach(function (x) { if (x.id === id) p = x; });
+    if (!p) return;
+    var t = today(), d = p.days ? addDays(t, p.days) : addMonths(t, p.months);
+    var set = function (k, v) { var el = $(k); if (el) el.value = v; };
+    if (!val('name')) set('name', p.name);
+    set('where', p.where); set('label', 'mine'); set('date', d);
+    setText('preset-note', p.name + ': ' + p.range + ' (' + WHERE[p.where].toLowerCase() + '). Reminder set for ' + niceDate(d) + '.');
+  }
+
+  /* ---------- toast · copy · share (standard: Web Share -> clipboard -> honest message on failure) ---------- */
+  var toastTimer = null;
+  function showToastNotification(m) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = m; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please select the text and copy it yourself.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function summary() {
+    var t = today(), due = sorted(loadItems()).filter(function (x) { return daysUntil(x.date, t) <= 7; });
+    var lines = ['🥫 Use first from my kitchen'];
+    if (!due.length) lines.push('Nothing expires in the next 7 days. 🎉');
+    due.slice(0, 10).forEach(function (x) {
+      lines.push('• ' + x.name + ': ' + countdown(daysUntil(x.date, t)).text.toLowerCase() + ' (' + LABEL[x.label].toLowerCase() + ' ' + niceDate(x.date) + ')');
+    });
+    if (due.length > 10) lines.push('…and ' + (due.length - 10) + ' more');
+    lines.push('👉 ' + TOOL_NAME + ': ' + SITE + '/');
+    return lines.join('\n');
+  }
+
+  /* ---------- events ---------- */
+  on('btn-add', 'click', add);
+  on('name', 'keydown', function (e) { if (e.key === 'Enter') add(); });
+  on('preset', 'change', applyPreset);
+  on('items', 'click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('button[data-act]') : null;
+    if (!b) return;
+    var li = b.closest('li'); if (li) act(li.getAttribute('data-id'), b.getAttribute('data-act'));
+  });
+  on('btn-clear', 'click', function () {
+    if (!window.confirm('Delete your used and tossed history from this browser? Your food list stays.')) return;
+    try { localStorage.removeItem(HIST); } catch (e) { /* storage unavailable */ }
+    renderTally();
+    showToastNotification('History cleared.');
+  });
+  on('btn-copy', 'click', function () { copyText(summary()); });
+  on('btn-share', 'click', function () {
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: SITE + '/' }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) renderList(); });
+
+  /* ---------- start: preset table, URL pre-fill (?name=&date=&where=&label=&price=), list ---------- */
+  (function init() {
+    var sel = $('preset'), body = $('preset-body');
+    PRESETS.forEach(function (p) {
+      if (sel) { var o = document.createElement('option'); o.value = p.id; o.textContent = p.name + ' (' + p.range + ')'; sel.appendChild(o); }
+      if (body) {
+        var tr = document.createElement('tr');
+        var rem = p.days ? 'after ' + p.days + (p.days === 1 ? ' day' : ' days') : 'after ' + p.months + ' months';
+        [p.name, WHERE[p.where], p.range, rem].forEach(function (t) { var td = document.createElement('td'); td.textContent = t; tr.appendChild(td); });
+        body.appendChild(tr);
+      }
+    });
+    var dt = $('date'); if (dt) dt.value = addDays(today(), 7);
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q) {
+      var set = function (k, v) { var el = $(k); if (el) el.value = v; };
+      if (q.has('name')) set('name', (q.get('name') || '').slice(0, 60));
+      if (parseKey(q.get('date'))) set('date', q.get('date'));
+      if (WHERE[q.get('where')]) set('where', q.get('where'));
+      if (LABEL[q.get('label')]) set('label', q.get('label'));
+      if (q.has('price') && okPrice(Number(q.get('price'))) && q.get('price') !== '') set('price', q.get('price'));
+    }
+    renderAll();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
